@@ -7,7 +7,7 @@ html {
 
 body {
   width: 80em;
-  margin: 1.0 auto;
+  margin: 0.5 auto;
 }
 
 /* Typography */
@@ -50,7 +50,7 @@ main {
 }
 
 main p, main li {
-  line-height: 3;
+  line-height: 2.5;
 }
 
 img {
