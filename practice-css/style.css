@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  width: 90em;
+  width: 80em;
   margin: 1.0 auto;
 }
 
@@ -30,7 +30,7 @@ p,li {
 
 header, footer {
   background-color: teal;
-  height: 11em;
+  height: 10em;
   padding: 1em;
 }
 
@@ -50,7 +50,7 @@ main {
 }
 
 main p, main li {
-  line-height: 2;
+  line-height: 3;
 }
 
 img {
