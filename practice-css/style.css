@@ -20,7 +20,7 @@ h2 {
   font-size: 3.0em;
 }
 
-p  li {
+p,li {
   font-size: 4.0em;
 }
 
@@ -30,7 +30,8 @@ p  li {
 
 header, footer {
   background-color: teal;
-  height: 6em;
+  height: 6px;
+  width: 200px;
   padding: 3em;
 }
 
