@@ -9,5 +9,5 @@ x;
 3
 x=x+1
 4
-cpnsole.log(x);
+console.log(x);
 4
