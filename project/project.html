@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src='project.js'></script>
+    <link rel="stylesheet" href="project.css">
+    <title>世界の天気</title>
+  </head>
+  <body>
+    <header>
+      <div id="gazou1">
+     <h1><p>世界の天気</p></h1>
+      </div>
+    </header>
+    <h2><p>世界の大州ごとにまとめました。</p></h2>
+  <div onclick="obj=document.getElementById('popo').style; obj.display=(obj.display=='none')?'block':'none';">
+  <a style="cursor:pointer;"><div id="alal"><h3>▼ クリックして目次を表示</h3></div></a>
+  </div>
+  <div id="popo" style="display:none;clear:both;">
+   <ul>
+    <li><h3><a href="#asia">アジア</a></h3></li>
+    <li><h3><a href="#europe">ヨーロッパ</a></h3></li>
+  </ul>
+  <!--この部分が折りたたまれ、展開ボタンをクリックすることで展開します。-->
+   
+  </div>
+    </form>
+    <h2 id="asia">アジア</h2>
+    <table border="2">
+      <thead>
+          <tr>
+              <th>都市名(国名)</th>
+              <th>最高気温</th>
+              <th>最低気温</th>
+              <th>湿度</th>
+              <th>天気</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Tokyo<br>(japan)</td>
+              <td>送られてくるデータ</td>
+              <td>9999</td>
+              <th>1qqqqqq</th>
+              <th>2</th>
+          </tr>
+          <tr>
+            <td>Beijing<br>(China)</td>
+            <td>aaaaaa</td>
+            <td>ie</td>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Singapore<br>(Singapore)</td>
+            <td>送られてくるデータ</td>
+            <td>9999</td>
+            <th></th>
+            <th></th>
+        </tr>
+      </tbody>
+  </table>
+  <h2 id="europe">ヨーロッパ</h2>
+  <table border="2">
+      <thead>
+        <tr>
+          <th>都市名(国名)</th>
+              <th>最高気温</th>
+              <th>最低気温</th>
+              <th>湿度</th>
+              <th>天気</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>順次追加</th>
+          <th>幅も種目の追加で調整</th>
+        </tr>
+      </tbody>
+
+  </table>
+    
+  
+
+  </body>

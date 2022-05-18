@@ -2,7 +2,7 @@
 
 html {
     font-family: 'Helvetica neue', Arial, 'sans serif';
-    font-size: 10px;
+    font-size: 12px;
   }
   
   body {
@@ -29,7 +29,10 @@ html {
   /* header and footer */
   
   header, footer {
-    background-color: tomato;
+    background-color: teal;
+    height: 10em;
+    padding: 1em;
+
   }
   
   h1, footer p {
