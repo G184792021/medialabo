@@ -1,0 +1,48 @@
+table,
+td {
+    border-collapse: collapse;
+    width: 1000px;
+    table-layout: fixed;
+    font-size: 110%;
+}
+thead,
+tfoot {
+    font-size: 120%;
+    background-color: #393232;
+    color: #fff;
+}
+
+#alal{
+    color: rgb(255, 0, 21);
+}
+/*全体*/
+html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 16px;
+  }
+  
+  body {
+    width: 80em;
+    margin: 0 auto;
+  }
+  /**/
+
+
+ body {
+        background-image: url("tenki_mark01_hare.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+        background-color: #26ccff;
+      }
+  
+  h1, footer p {
+    margin: 1px;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 0.3em 0;
+    font-size: 200px;
+  }
