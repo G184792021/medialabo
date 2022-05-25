@@ -8,6 +8,7 @@ html {
   body {
     width: 80em;
     margin: 0 auto;
+  background-color: aqua;
   }
   
   /* Typography */
@@ -35,13 +36,14 @@ html {
 
   }
   
-  h1, footer p {
-    margin: -70px;
-  }
+ 
   
   h1 {
     text-align: center;
-    padding: 0.5em 0;
+    padding: 0.5em;
+    background-color: red;
+    background-size: cover;
+    height: 2em;
   }
   
   /* main content */
@@ -52,4 +54,18 @@ html {
   
   main p, main li {
     line-height: 2;
+  }
+  body {
+    background-image: url("https://1.bp.blogspot.com/-WT2c8WOuFPA/X5OcJmDxy8I/AAAAAAABb50/LnKRjnPVF64Ggq436nd0CU2YFq-PCuOHwCNcBGAsYHQ/s934/character_tsumayouji.png");
+    background-position:left left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+  }
+  #maa {
+    background-image: url("https://1.bp.blogspot.com/-WT2c8WOuFPA/X5OcJmDxy8I/AAAAAAABb50/LnKRjnPVF64Ggq436nd0CU2YFq-PCuOHwCNcBGAsYHQ/s934/character_tsumayouji.png");
+    background-position:right right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
   }

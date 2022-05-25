@@ -44,8 +44,3 @@ let data = {
     "name": "北京市",
     "cod": 200
   }
-  console.log("都市名"+data.name);
-  console.log("最高気温"+data.main.temp_max);
-  console.log("最低気温"+data.main.temp_min);
- let aaa = document.createElement('aaa');
- aaa.textContent = data.main.temp_max;
