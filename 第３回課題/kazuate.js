@@ -20,7 +20,7 @@ function hantei() {      // 第5回課題:テキストボックスの数値を�
     
 
         console.log(kaisu+"回目の予想: "+yoso);
-        if(kaisu<3) {
+        if(kaisu<2) {
             if(kotae==yoso){
                 let aba = document.querySelector("p#result");
                 aba.textContent=("正解です．おめでとう!");
@@ -41,6 +41,7 @@ function hantei() {      // 第5回課題:テキストボックスの数値を�
         }else {
             let aba = document.querySelector("p#result");
             aba.textContent=("答えは "+kotae+" でした．すでにゲームは終わっています");
+            kaisu=kaisu+1;
         }
     
     

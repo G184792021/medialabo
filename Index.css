@@ -58,16 +58,11 @@ html {
     line-height: 2;
   }
   body {
-    background-image: url("https://1.bp.blogspot.com/-WT2c8WOuFPA/X5OcJmDxy8I/AAAAAAABb50/LnKRjnPVF64Ggq436nd0CU2YFq-PCuOHwCNcBGAsYHQ/s934/character_tsumayouji.png");
-    background-position:left left;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-  }
-  #maa {
-    background-image: url("https://1.bp.blogspot.com/-WT2c8WOuFPA/X5OcJmDxy8I/AAAAAAABb50/LnKRjnPVF64Ggq436nd0CU2YFq-PCuOHwCNcBGAsYHQ/s934/character_tsumayouji.png");
-    background-position:right right;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
+    background-image: url("https://www.iloveimg.com/ja/download/v1r6ttrccA0lwmvt22jrjpknb57l3s09yA8j4yvlkA95425t5nb459n53kxmchj0mnv8kr8gf488cA576jz5rmy8c69v5wbv6dcbgr620A9x2gfgxv0kkrqkz0d2Alzmqr63s3qf9rt5z0nqvlpjnnvbjjfzgf30pr8mtAjy14qb4ly8tkm1/6"),
+    url("https://1.bp.blogspot.com/-WT2c8WOuFPA/X5OcJmDxy8I/AAAAAAABb50/LnKRjnPVF64Ggq436nd0CU2YFq-PCuOHwCNcBGAsYHQ/s934/character_tsumayouji.png");
+    background-position:left left,right right;
+    background-repeat: no-repeat,no-repeat;
+    background-attachment: fixed,fixed;
+    background-size: 100%,100%;
+    background-size: contain,contain;/*回転させるのは変数置かないとダメ*/
   }
