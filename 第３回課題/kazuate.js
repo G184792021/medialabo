@@ -14,7 +14,8 @@ let b = document.querySelector('#print');
 b.addEventListener('click', rrr);
 function rrr() {
     let o = document.querySelector('input[name="lll"]');
-    let lll = o.value;      
+    let lll = o.value;   
+    
 }
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
