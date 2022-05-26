@@ -10,9 +10,17 @@ let yoso;
 // 将来: ボタンを押したら， hantei() を呼び出すように修正する
 hantei();
 
+let b = document.querySelector('#print');
+b.addEventListener('click', rrr);
+function rrr() {
+    let o = document.querySelector('input[name="lll"]');
+    let lll = o.value;      
+}
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
-    yoso = 4;       // 第5回課題:テキストボックスの数値をここに代入
+    yoso = lll;       // 第5回課題:テキストボックスの数値をここに代入
+    
+
     // 課題3-1：ここの判定処理を作成する．
     kaisu=kaisu+1;
 
