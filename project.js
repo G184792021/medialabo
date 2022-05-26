@@ -3,14 +3,14 @@ let data = {
       "lon": 116.3972,
       "lat": 39.9075
     },
-    "weather": [
+  "weather": 
       {
         "id": 803,
         "main": "Clouds",
         "description": "曇りがち",
         "icon": "04d"
       }
-    ],
+    ,
     "base": "stations",
     "main": {
       "temp": 9.94,
@@ -47,5 +47,11 @@ let data = {
   console.log("都市名"+data.name);
   console.log("最高気温"+data.main.temp_max);
   console.log("最低気温"+data.main.temp_min);
- let aaa = document.createElement('aaa');
- aaa.textContent = data.main.temp_max;
+ let bmax = document.querySelector('div#bmax');
+ bmax.textContent = data.main.temp_max;
+ let bmin = document.querySelector('div#bmin');
+ bmin.textContent = data.main.temp_min;
+ let bhum = document.querySelector('div#bhum');
+ bhum.textContent = data.main.humidity;
+ let bwea = document.querySelector('div#bwea');
+ bwea.textContent = data.weather.main;

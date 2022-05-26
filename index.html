@@ -14,7 +14,20 @@
     <p>プロジェクト課題では　を実施する.ここで表示するデータは</p>
     <p>プロジェクト課題で作成したページ:<a href="project.html">project.html</a></p>
     <h2><p>毎回の授業で作成したページ</p></h2>
-    <h2><p>第１回　HTMLによるWebページの構造の記述</p></h2>
+    <div onclick="obj=document.getElementById('popo').style; obj.display=(obj.display=='none')?'block':'none';">
+      <a style="cursor:pointer;"><div id="uiui"><h3>▼ クリックして目次を表示</h3></div></a>
+      </div>
+      <div id="popo" style="display:none;clear:both;">
+        <ul>
+         <li><h3><a href="#1">第1回</a></h3></li>
+         <li><h3><a href="#2">第2回</a></h3></li>
+         <li><h3><a href="#3">第3回</a></h3></li>
+         <li><h3><a href="#4">第4回</a></h3></li>
+         <li><h3><a href="#5">第5回</a></h3></li>
+         <li><h3><a href="#6">第6回</a></h3></li>
+       </ul>
+      </div>
+    <h2 id="1"><p>第１回　HTMLによるWebページの構造の記述</p></h2>
     <p>今回はHTMLの基本操作、デバッグについて、学びました.また次の課題に取り組みました.</p>
     <h4><p>練習 1-4: リスト</p></h4>
     <p>テキストだけで記載されていたレシピのHTMLを編集しました.見出しやリストなどの要素により文書の構造を記述しました.ここで使用使用したのはｐ要素,h1要素,ul要素,ol などです.</p>
@@ -27,7 +40,7 @@
     <p><a href="practice/index. (1).html">practice/index. html</a></p>
     <p><a href="practice/text-start.html">practice/text-start.html</a></p>
     <p><a href="practice/debug-example.html">practice/debug-example.html</a></p>
-    <h2><p>第2回 CSSによるWebページの装飾</p></h2>
+    <h2 id="2"><p>第2回 CSSによるWebページの装飾</p></h2>
     <h4><p>練習問題2-3</p></h4>
     <p>CSSを見直して正常な表示になるように作り替えた。</p>
     <p><a href="practice-css/index.html">practice-css/index.html</a></p>
@@ -37,7 +50,7 @@
     <p>プロジェクト課題のCSSの作成に手を付けました。</p>
     <h4><p>課題2-3: medialabo/index.html を編集しよう</p></h4>
     <p>第2回の内容を追加しました</p>
-    <h2><p>第3回 JavaScriptnの基本</p></h2>
+    <h2 id="3"><p>第3回 JavaScriptnの基本</p></h2>
     <h4><p>練習問題3-5</p></h4>
     <p>JSの動作を確認しました。</p>
     <p><a href="practice-js/jsintro.html">practice-js/jsintro.html</a></p>
@@ -51,7 +64,7 @@
     <p>コンソールにデータが出力されるようにしました。</p>
     <h4><p>課題3-3</p></h4>
     <p>第三回の内容を更新しました。</p>
-    <h2><p>第4回 DOM と JavaScript</p></h2>
+    <h2 id="4"><p>第4回 DOM と JavaScript</p></h2>
     <h4><p>練習問題4-6</p></h4>
     <p>コンソールで実行した内容をwebページに反映しました。</p>
     <h4><p>練習問題4-7</p></h4>
@@ -72,5 +85,11 @@
     <p>jsを追加しました。</p>
     <h4><p>課題4-3</p></h4>
     <p>第4回の内容を追加しました。</p>
+    <h2 id="5"><p>第5回 イベント処理</p></h2>
+
+
+
+
+    <h2 id="6"><p>第6回 プロジェクト課題を完成させよう</p></h2>
   </body>
 </html>
