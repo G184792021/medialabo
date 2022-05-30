@@ -14,15 +14,17 @@ html {
   /* Typography */
   
   h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
   
   h2 {
-    font-size: 3.2em;
+    font-size: 2.5em;
   }
-  
-  pli {
-    font-size: 1.7em;
+  h3{
+    font-size: 2.0em;
+  }
+  p {
+    font-size: 1.5em;
   }
   #uiui{
     color: rgb(255, 0, 21);
@@ -40,22 +42,35 @@ html {
   
  
   
+
   h1 {
-    text-align: center;
-    padding: 0.5em;
-    background-color: red;
+    border: 5px solid rgb(198, 191, 191);
     background-size: cover;
-    height: 2em;
-  }
-  
+    padding: 30px;
+    margin: 50px;
+    width: 800px;
+    height: 175px;
+    background: rgb(151, 208, 240);
+}
   /* main content */
   
   main {
-    padding: 2em;
+    padding: 2.3em;
+  }
+  a:link {
+    color: red;
   }
   
+  a:visited {
+    color: pink;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
   main p, main li {
     line-height: 2;
+    
   }
   body {
     background-image: url("https://www.iloveimg.com/ja/download/v1r6ttrccA0lwmvt22jrjpknb57l3s09yA8j4yvlkA95425t5nb459n53kxmchj0mnv8kr8gf488cA576jz5rmy8c69v5wbv6dcbgr620A9x2gfgxv0kkrqkz0d2Alzmqr63s3qf9rt5z0nqvlpjnnvbjjfzgf30pr8mtAjy14qb4ly8tkm1/6"),
@@ -65,4 +80,5 @@ html {
     background-attachment: fixed,fixed;
     background-size: 100%,100%;
     background-size: contain,contain;/*回転させるのは変数置かないとダメ*/
+    transform: rotate(0turn),rotate(0.5turn);
   }
