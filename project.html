@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <script src="project.js" defer></script>
     <link rel="stylesheet" href="project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <title>世界の天気</title>
   </head>
   <body>
     <header>
      <h1><p>世界の天気</p></h1>
     </header>
+    <p>まずはここをクリック</p>
+    <button id="sendRequest">通信</button>
     <h2><p>世界の大州ごとにまとめました。</p></h2>
   <div onclick="obj=document.getElementById('popo').style; obj.display=(obj.display=='none')?'block':'none';">
   <a style="cursor:pointer;"><div id="alal"><h3>▼ クリックして目次を表示</h3></div></a>
