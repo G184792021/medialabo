@@ -11,9 +11,10 @@
     <header>
      <h1><p>世界の天気</p></h1>
     </header>
-    <p>まずはここをクリック</p>
-    <button id="sendRequest">通信</button>
-    <h2><p>世界の大州ごとにまとめました。</p></h2>
+    <p>クリックで天気を取得</p>
+    <button id="sendRequest">GET</button>
+    <h2><p>世界の大州ごとにまとめました。<br>
+      天気、最低気温、最高気温、湿度が見れます。</p></h2>
   <div onclick="obj=document.getElementById('popo').style; obj.display=(obj.display=='none')?'block':'none';">
   <a style="cursor:pointer;"><div id="alal"><h3>▼ クリックして目次を表示</h3></div></a>
   </div>
@@ -39,25 +40,25 @@
       </thead>
       <tbody>
           <tr>
-            <td>>Cairo<br>(エジプト)</td>
-            <td><div id ="amax"></div</td>
-            <td>9999</td>
-            <th></th>
-            <th></th>
+            <td>>カイロ<br>(エジプト)</td>
+            <td><div id="amax"></div></td>
+            <td><div id="amin"></div></td>
+            <th><div id="ahum"></div></th>
+            <th><div id="awea">%</div></th>
           </tr>
           <tr>
-            <td>Beijing<br>(中国)</td>
+            <td>シドニー<br>(オーストラリア)</td>
             <td><div id="bmax"></div></td>
             <td><div id="bmin"></div></td>
             <th><div id="bhum"></div></th>
             <th><div id="bwea">%</div></th>
           </tr>
           <tr>
-            <td>Singapore<br>(シンガポール)</td>
-            <td>送られてくるデータ</td>
-            <td>9999</td>
-            <th></th>
-            <th></th>
+            <td>シンガポール<br>(シンガポール)</td>
+            <td><div id="cmax"></div></td>
+            <td><div id="cmin"></div></td>
+            <th><div id="chum"></div></th>
+            <th><div id="cwea">%</div></th>
         </tr>
       </tbody>
   </table>
