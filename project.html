@@ -22,8 +22,10 @@
    <ul>
     <li><h3><a href="#asia">アジア</a></h3></li>
     <li><h3><a href="#europe">ヨーロッパ</a></h3></li>
-  </ul>
-  <!--この部分が折りたたまれ、展開ボタンをクリックすることで展開します。-->
+    <li><h3><a href="#africa">アフリカ</a></h3></li>
+    <li><h3><a href="#america">アメリカ</a></h3></li>
+    <li><h3><a href="#oceania">オセアニア</a></h3></li>
+  </ul>>
    
   </div>
     </form>
@@ -40,26 +42,33 @@
       </thead>
       <tbody>
           <tr>
-            <td>>カイロ<br>(エジプト)</td>
-            <td><div id="amax"></div></td>
-            <td><div id="amin"></div></td>
-            <th><div id="ahum"></div></th>
-            <th><div id="awea">%</div></th>
+            <td>東京<br>(日本)</td>
+            <td><div id="emax"></div></td>
+            <td><div id="emin"></div></td>
+            <th><div id="ehum">%</div></th>
+            <th><div id="ewea"></div></th>
           </tr>
           <tr>
-            <td>シドニー<br>(オーストラリア)</td>
+            <td>北京<br>(中国)</td>
+            <td><div id="dmax"></div></td>
+            <td><div id="dmin"></div></td>
+            <th><div id="dhum">%</div></th>
+            <th><div id="dwea"></div></th>
+          </tr>
+          <tr>
+            <td>モスクワ<br>(ロシア)</td>
             <td><div id="bmax"></div></td>
             <td><div id="bmin"></div></td>
-            <th><div id="bhum"></div></th>
-            <th><div id="bwea">%</div></th>
-          </tr>
-          <tr>
-            <td>シンガポール<br>(シンガポール)</td>
-            <td><div id="cmax"></div></td>
-            <td><div id="cmin"></div></td>
-            <th><div id="chum"></div></th>
-            <th><div id="cwea">%</div></th>
+            <th><div id="bhum">%</div></th>
+            <th><div id="bwea"></div></th>
         </tr>
+        <tr>
+          <td>シンガポール<br>(シンガポール)</td>
+          <td><div id="fmax"></div></td>
+          <td><div id="fmin"></div></td>
+          <th><div id="fhum">%</div></th>
+          <th><div id="fwea"></div></th>
+      </tr>
       </tbody>
   </table>
   <h2 id="europe">ヨーロッパ</h2>
@@ -75,10 +84,98 @@
       </thead>
       <tbody>
         <tr>
-          <th>順次追加</th>
-          <th>幅も種目の追加で調整</th>
-        </tr>
+          <td>パリ<br>(フランス)</td>
+          <td><div id="imax"></div></td>
+          <td><div id="imin"></div></td>
+          <th><div id="ihum">%</div></th>
+          <th><div id="iwea"></div></th>
+      </tr>
+      <tr>
+        <td>ロンドン<br>(イギリス)</td>
+        <td><div id="hmax"></div></td>
+        <td><div id="hmin"></div></td>
+        <th><div id="hhum">%</div></th>
+        <th><div id="hwea"></div></th>
+    </tr>
       </tbody>
+    </table>
+  <h2 id="africa">アフリカ</h2>
+      <table border="2">
+          <thead>
+            <tr>
+              <th>都市名(国名)</th>
+                  <th>最高気温</th>
+                  <th>最低気温</th>
+                  <th>湿度</th>
+                  <th>天気</th>
+            </tr>
+          </thead><tr>
+            <td>カイロ<br>(エジプト)</td>
+            <td><div id="amax"></div></td>
+            <td><div id="amin"></div></td>
+            <th><div id="ahum">%</div></th>
+            <th><div id="awea"></div></th>
+        </tr>
+          <tbody>
+
+            <tr>
+              <td>ヨハネスブルク<br>(南アフリカ)</td>
+              <td><div id="cmax"></div></td>
+              <td><div id="cmin"></div></td>
+              <th><div id="chum">%</div></th>
+              <th><div id="cwea"></div></th>
+          </tr>
+          </tbody>
+        </table>
+  <h2 id="america">アメリカ</h2>
+          <table border="2">
+              <thead>
+                <tr>
+                  <th>都市名(国名)</th>
+                      <th>最高気温</th>
+                      <th>最低気温</th>
+                      <th>湿度</th>
+                      <th>天気</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ニューヨーク<br>(アメリカ)</td>
+                  <td><div id="kmax"></div></td>
+                  <td><div id="kmin"></div></td>
+                  <th><div id="khum">%</div></th>
+                  <th><div id="kwea"></div></th>
+              </tr>
+              <tr>
+                <td>ロサンゼルス<br>(アメリカ)</td>
+                <td><div id="lmax"></div></td>
+                <td><div id="lmin"></div></td>
+                <th><div id="lhum">%</div></th>
+                <th><div id="lwea"></div></th>
+            </tr>
+              </tbody>
+            </table>
+    <h2 id="oceania">オセアニア</h2>
+              <table border="2">
+                  <thead>
+                    <tr>
+                      <th>都市名(国名)</th>
+                          <th>最高気温</th>
+                          <th>最低気温</th>
+                          <th>湿度</th>
+                          <th>天気</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>シドニー<br>(オーストラリア)</td>
+                      <td><div id="gmax"></div></td>
+                      <td><div id="gmin"></div></td>
+                      <th><div id="ghum">%</div></th>
+                      <th><div id="gwea"></div></th>
+                  </tr>
+                  </tbody>
+                </table>
 
   </table>
     

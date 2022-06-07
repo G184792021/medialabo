@@ -90,6 +90,9 @@ function showResult(resp) {
   let data = resp.data;
   ara[count] = data;
   count = count +1;
+  if (typeof data === 'string') {
+    data = JSON.parse(data);
+}
   // ara[i] = data;
   // for (let r=0;r<data.length;r++){
   //   let bmin = document.querySelector('div#bmin');
@@ -97,64 +100,58 @@ function showResult(resp) {
   // }
 
   console.log(data);
-
-  
-  document.querySelector('div#amin').textContent = data.main.temp_min;
-  document.querySelector('div#bmin').textContent = data.main.temp_min;
-  document.querySelector('div#cmin').textContent = data.main.temp_min;
-  document.querySelector('div#dmin').textContent = data.main.temp_min;
-  document.querySelector('div#emin').textContent = data.main.temp_min;
-  document.querySelector('div#fmin').textContent = data.main.temp_min;
-  document.querySelector('div#gmin').textContent = data.main.temp_min;
-  document.querySelector('div#hmin').textContent = data.main.temp_min;
-  document.querySelector('div#imin').textContent = data.main.temp_min;
-  document.querySelector('div#jmin').textContent = data.main.temp_min;
-  document.querySelector('div#kmin').textContent = data.main.temp_min;
-  document.querySelector('div#lmin').textContent = data.main.temp_min;
-  document.querySelector('div#amax').textContent = data.main.temp_max;
-  document.querySelector('div#bmax').textContent = data.main.temp_max;
-  document.querySelector('div#cmax').textContent = data.main.temp_max;
-  document.querySelector('div#dmax').textContent = data.main.temp_max;
-  document.querySelector('div#emax').textContent = data.main.temp_max;
-  document.querySelector('div#fmax').textContent = data.main.temp_max;
-  document.querySelector('div#gmax').textContent = data.main.temp_max;
-  document.querySelector('div#hmax').textContent = data.main.temp_max;
-  document.querySelector('div#imax').textContent = data.main.temp_max;
-  document.querySelector('div#jmax').textContent = data.main.temp_max;
-  document.querySelector('div#kmax').textContent = data.main.temp_max;
-  document.querySelector('div#lmax').textContent = data.main.temp_max;
-  document.querySelector('div#ahum').textContent = data.main.humidity;
-  document.querySelector('div#bhum').textContent = data.main.humidity;
-  document.querySelector('div#chum').textContent = data.main.humidity;
-  document.querySelector('div#dhum').textContent = data.main.humidity;
-  document.querySelector('div#ehum').textContent = data.main.humidity;
-  document.querySelector('div#fhum').textContent = data.main.humidity;
-  document.querySelector('div#ghum').textContent = data.main.humidity;
-  document.querySelector('div#hhum').textContent = data.main.humidity;
-  document.querySelector('div#ihum').textContent = data.main.humidity;
-  document.querySelector('div#jhum').textContent = data.main.humidity;
-  document.querySelector('div#khum').textContent = data.main.humidity;
-  document.querySelector('div#lhum').textContent = data.main.humidity;
-  document.querySelector('div#awea').textContent = data.weather.description;
-  document.querySelector('div#bwea').textContent = data.weather.description;
-  document.querySelector('div#cwea').textContent = data.weather.description;
-  document.querySelector('div#dwea').textContent = data.weather.description;
-  document.querySelector('div#ewea').textContent = data.weather.description;
-  document.querySelector('div#fwea').textContent = data.weather.description;
-  document.querySelector('div#gwea').textContent = data.weather.description;
-  document.querySelector('div#hwea').textContent = data.weather.description;
-  document.querySelector('div#iwea').textContent = data.weather.description;
-  document.querySelector('div#jwea').textContent = data.weather.description;
-  document.querySelector('div#kwea').textContent = data.weather.description;
-  document.querySelector('div#lwea').textContent = data.weather.description;
+  document.querySelector('div#amax').textContent = ara[0].main.temp_max;
+  document.querySelector('div#amin').textContent = ara[0].main.temp_min;
+  document.querySelector('div#ahum').textContent = ara[0].main.humidity;
+  document.querySelector('div#awea').textContent = ara[0].weather.description;
+  document.querySelector('div#bmax').textContent = ara[1].main.temp_max;
+  document.querySelector('div#bmin').textContent = ara[1].main.temp_min;
+  document.querySelector('div#bhum').textContent = ara[1].main.humidity;
+  document.querySelector('div#bwea').textContent = ara[1].weather.description;
+  document.querySelector('div#cmax').textContent = ara[2].main.temp_max;
+  document.querySelector('div#cmin').textContent = ara[2].main.temp_min;
+  document.querySelector('div#chum').textContent = ara[2].main.humidity;
+  document.querySelector('div#cwea').textContent = ara[2].weather.description;
+  document.querySelector('div#dmax').textContent = ara[3].main.temp_max;
+  document.querySelector('div#dmin').textContent = ara[3].main.temp_min;
+  document.querySelector('div#dhum').textContent = ara[3].main.humidity;
+  document.querySelector('div#dwea').textContent = ara[3].weather.description;
+  document.querySelector('div#emax').textContent = ara[4].main.temp_max;
+  document.querySelector('div#emin').textContent = ara[4].main.temp_min;
+  document.querySelector('div#ehum').textContent = ara[4].main.humidity;
+  document.querySelector('div#ewea').textContent = ara[4].weather.description;
+  document.querySelector('div#fmax').textContent = ara[5].main.temp_max;
+  document.querySelector('div#fmin').textContent = ara[5].main.temp_min;
+  document.querySelector('div#fhum').textContent = ara[5].main.humidity;
+  document.querySelector('div#fwea').textContent = ara[5].weather.description;
+  document.querySelector('div#gmax').textContent = ara[6].main.temp_max;
+  document.querySelector('div#gmin').textContent = ara[6].main.temp_min;
+  document.querySelector('div#ghum').textContent = ara[6].main.humidity;
+  document.querySelector('div#gwea').textContent = ara[6].weather.description;
+  document.querySelector('div#hmax').textContent = ara[7].main.temp_max;
+  document.querySelector('div#hmin').textContent = ara[7].main.temp_min;
+  document.querySelector('div#hhum').textContent = ara[7].main.humidity;
+  document.querySelector('div#hwea').textContent = ara[7].weather.description;
+  document.querySelector('div#imax').textContent = ara[8].main.temp_max;
+  document.querySelector('div#imin').textContent = ara[8].main.temp_min;
+  document.querySelector('div#ihum').textContent = ara[8].main.humidity;
+  document.querySelector('div#iwea').textContent = ara[8].weather.description;
+  document.querySelector('div#jmax').textContent = ara[9].main.temp_max;
+  document.querySelector('div#jmin').textContent = ara[9].main.temp_min;
+  document.querySelector('div#jhum').textContent = ara[9].main.humidity;
+  document.querySelector('div#jwea').textContent = ara[9].weather.description;
+  document.querySelector('div#kmax').textContent = ara[10].main.temp_max;
+  document.querySelector('div#kmin').textContent = ara[10].main.temp_min;
+  document.querySelector('div#khum').textContent = ara[10].main.humidity;
+  document.querySelector('div#kwea').textContent = ara[10].weather.description;
+  document.querySelector('div#lmax').textContent = ara[11].main.temp_max;
+  document.querySelector('div#lmin').textContent = ara[11].main.temp_min;
+  document.querySelector('div#lhum').textContent = ara[11].main.humidity;
+  document.querySelector('div#lwea').textContent = ara[11].weather.description;
   
   // data が文字列型なら，オブジェクトに変換する
-  if (typeof data === 'string') {
-      data = JSON.parse(data);
-  }
 }
- let bmin = document.querySelector('div#bmin');
- bmin.textContent = data.main.temp_min;
+
 
 
 
