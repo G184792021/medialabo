@@ -57,7 +57,7 @@ let data = {
 //  let bhum = document.querySelector('div#bhum');
 //  bhum.textContent = data.main.humidity;
 //  let bwea = document.querySelector('div#bwea');
-//  bwea.textContent = data.weather.description;
+//  bwea.textContent = data.wind.speed;
 
 
 
@@ -103,51 +103,51 @@ function showResult(resp) {
   document.querySelector('div#amax').textContent = ara[0].main.temp_max;
   document.querySelector('div#amin').textContent = ara[0].main.temp_min;
   document.querySelector('div#ahum').textContent = ara[0].main.humidity;
-  document.querySelector('div#awea').textContent = ara[0].weather.description;
+  document.querySelector('div#awea').textContent = ara[0].wind.speed;
   document.querySelector('div#bmax').textContent = ara[1].main.temp_max;
   document.querySelector('div#bmin').textContent = ara[1].main.temp_min;
   document.querySelector('div#bhum').textContent = ara[1].main.humidity;
-  document.querySelector('div#bwea').textContent = ara[1].weather.description;
+  document.querySelector('div#bwea').textContent = ara[1].wind.speed;
   document.querySelector('div#cmax').textContent = ara[2].main.temp_max;
   document.querySelector('div#cmin').textContent = ara[2].main.temp_min;
   document.querySelector('div#chum').textContent = ara[2].main.humidity;
-  document.querySelector('div#cwea').textContent = ara[2].weather.description;
+  document.querySelector('div#cwea').textContent = ara[2].wind.speed;
   document.querySelector('div#dmax').textContent = ara[3].main.temp_max;
   document.querySelector('div#dmin').textContent = ara[3].main.temp_min;
   document.querySelector('div#dhum').textContent = ara[3].main.humidity;
-  document.querySelector('div#dwea').textContent = ara[3].weather.description;
+  document.querySelector('div#dwea').textContent = ara[3].wind.speed;
   document.querySelector('div#emax').textContent = ara[4].main.temp_max;
   document.querySelector('div#emin').textContent = ara[4].main.temp_min;
   document.querySelector('div#ehum').textContent = ara[4].main.humidity;
-  document.querySelector('div#ewea').textContent = ara[4].weather.description;
+  document.querySelector('div#ewea').textContent = ara[4].wind.speed;
   document.querySelector('div#fmax').textContent = ara[5].main.temp_max;
   document.querySelector('div#fmin').textContent = ara[5].main.temp_min;
   document.querySelector('div#fhum').textContent = ara[5].main.humidity;
-  document.querySelector('div#fwea').textContent = ara[5].weather.description;
+  document.querySelector('div#fwea').textContent = ara[5].wind.speed;
   document.querySelector('div#gmax').textContent = ara[6].main.temp_max;
   document.querySelector('div#gmin').textContent = ara[6].main.temp_min;
   document.querySelector('div#ghum').textContent = ara[6].main.humidity;
-  document.querySelector('div#gwea').textContent = ara[6].weather.description;
+  document.querySelector('div#gwea').textContent = ara[6].wind.speed;
   document.querySelector('div#hmax').textContent = ara[7].main.temp_max;
   document.querySelector('div#hmin').textContent = ara[7].main.temp_min;
   document.querySelector('div#hhum').textContent = ara[7].main.humidity;
-  document.querySelector('div#hwea').textContent = ara[7].weather.description;
+  document.querySelector('div#hwea').textContent = ara[7].wind.speed;
   document.querySelector('div#imax').textContent = ara[8].main.temp_max;
   document.querySelector('div#imin').textContent = ara[8].main.temp_min;
   document.querySelector('div#ihum').textContent = ara[8].main.humidity;
-  document.querySelector('div#iwea').textContent = ara[8].weather.description;
+  document.querySelector('div#iwea').textContent = ara[8].wind.speed;
   document.querySelector('div#jmax').textContent = ara[9].main.temp_max;
   document.querySelector('div#jmin').textContent = ara[9].main.temp_min;
   document.querySelector('div#jhum').textContent = ara[9].main.humidity;
-  document.querySelector('div#jwea').textContent = ara[9].weather.description;
+  document.querySelector('div#jwea').textContent = ara[9].wind.speed;
   document.querySelector('div#kmax').textContent = ara[10].main.temp_max;
   document.querySelector('div#kmin').textContent = ara[10].main.temp_min;
   document.querySelector('div#khum').textContent = ara[10].main.humidity;
-  document.querySelector('div#kwea').textContent = ara[10].weather.description;
+  document.querySelector('div#kwea').textContent = ara[10].wind.speed;
   document.querySelector('div#lmax').textContent = ara[11].main.temp_max;
   document.querySelector('div#lmin').textContent = ara[11].main.temp_min;
   document.querySelector('div#lhum').textContent = ara[11].main.humidity;
-  document.querySelector('div#lwea').textContent = ara[11].weather.description;
+  document.querySelector('div#lwea').textContent = ara[11].wind.speed;
   
   // data が文字列型なら，オブジェクトに変換する
 }

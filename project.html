@@ -5,16 +5,16 @@
     <script src="project.js" defer></script>
     <link rel="stylesheet" href="project.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
-    <title>世界の天気</title>
+    <title>世界の風速m/s)</title>
   </head>
   <body>
     <header>
-     <h1><p>世界の天気</p></h1>
+     <h1><p>世界の風速m/s)</p></h1>
     </header>
-    <p>クリックで天気を取得</p>
+    <p>クリックで風速m/s)を取得</p>
     <button id="sendRequest">GET</button>
     <h2><p>世界の大州ごとにまとめました。<br>
-      天気、最低気温、最高気温、湿度が見れます。</p></h2>
+      風速m/s)、最低気温、最高気温(℃)、湿度が見れます。</p></h2>
   <div onclick="obj=document.getElementById('popo').style; obj.display=(obj.display=='none')?'block':'none';">
   <a style="cursor:pointer;"><div id="alal"><h3>▼ クリックして目次を表示</h3></div></a>
   </div>
@@ -34,10 +34,10 @@
       <thead>
           <tr>
               <th>都市名(国名)</th>
-              <th>最高気温</th>
-              <th>最低気温</th>
-              <th>湿度</th>
-              <th>天気</th>
+              <th>最高気温(℃)</th>
+              <th>最低気温(℃)</th>
+              <th>湿度(%)</th>
+              <th>風速(m/s)</th>
           </tr>
       </thead>
       <tbody>
@@ -45,28 +45,28 @@
             <td>東京<br>(日本)</td>
             <td><div id="emax"></div></td>
             <td><div id="emin"></div></td>
-            <th><div id="ehum">%</div></th>
+            <th><div id="ehum"></div></th>
             <th><div id="ewea"></div></th>
           </tr>
           <tr>
             <td>北京<br>(中国)</td>
             <td><div id="dmax"></div></td>
             <td><div id="dmin"></div></td>
-            <th><div id="dhum">%</div></th>
+            <th><div id="dhum"></div></th>
             <th><div id="dwea"></div></th>
           </tr>
           <tr>
             <td>モスクワ<br>(ロシア)</td>
             <td><div id="bmax"></div></td>
             <td><div id="bmin"></div></td>
-            <th><div id="bhum">%</div></th>
+            <th><div id="bhum"></div></th>
             <th><div id="bwea"></div></th>
         </tr>
         <tr>
           <td>シンガポール<br>(シンガポール)</td>
           <td><div id="fmax"></div></td>
           <td><div id="fmin"></div></td>
-          <th><div id="fhum">%</div></th>
+          <th><div id="fhum"></div></th>
           <th><div id="fwea"></div></th>
       </tr>
       </tbody>
@@ -76,10 +76,10 @@
       <thead>
         <tr>
           <th>都市名(国名)</th>
-              <th>最高気温</th>
-              <th>最低気温</th>
-              <th>湿度</th>
-              <th>天気</th>
+              <th>最高気温(℃)</th>
+              <th>最低気温(℃)</th>
+              <th>湿度(%)</th>
+              <th>風速(m/s)</th>
         </tr>
       </thead>
       <tbody>
@@ -87,14 +87,14 @@
           <td>パリ<br>(フランス)</td>
           <td><div id="imax"></div></td>
           <td><div id="imin"></div></td>
-          <th><div id="ihum">%</div></th>
+          <th><div id="ihum"></div></th>
           <th><div id="iwea"></div></th>
       </tr>
       <tr>
         <td>ロンドン<br>(イギリス)</td>
         <td><div id="hmax"></div></td>
         <td><div id="hmin"></div></td>
-        <th><div id="hhum">%</div></th>
+        <th><div id="hhum"></div></th>
         <th><div id="hwea"></div></th>
     </tr>
       </tbody>
@@ -104,16 +104,16 @@
           <thead>
             <tr>
               <th>都市名(国名)</th>
-                  <th>最高気温</th>
-                  <th>最低気温</th>
-                  <th>湿度</th>
-                  <th>天気</th>
+                  <th>最高気温(℃)</th>
+                  <th>最低気温(℃)</th>
+                  <th>湿度(%)</th>
+                  <th>風速(m/s)</th>
             </tr>
           </thead><tr>
             <td>カイロ<br>(エジプト)</td>
             <td><div id="amax"></div></td>
             <td><div id="amin"></div></td>
-            <th><div id="ahum">%</div></th>
+            <th><div id="ahum"></div></th>
             <th><div id="awea"></div></th>
         </tr>
           <tbody>
@@ -122,7 +122,7 @@
               <td>ヨハネスブルク<br>(南アフリカ)</td>
               <td><div id="cmax"></div></td>
               <td><div id="cmin"></div></td>
-              <th><div id="chum">%</div></th>
+              <th><div id="chum"></div></th>
               <th><div id="cwea"></div></th>
           </tr>
           </tbody>
@@ -132,10 +132,10 @@
               <thead>
                 <tr>
                   <th>都市名(国名)</th>
-                      <th>最高気温</th>
-                      <th>最低気温</th>
-                      <th>湿度</th>
-                      <th>天気</th>
+                      <th>最高気温(℃)</th>
+                      <th>最低気温(℃)</th>
+                      <th>湿度(%)</th>
+                      <th>風速(m/s)</th>
                 </tr>
               </thead>
               <tbody>
@@ -143,16 +143,16 @@
                   <td>ニューヨーク<br>(アメリカ)</td>
                   <td><div id="kmax"></div></td>
                   <td><div id="kmin"></div></td>
-                  <th><div id="khum">%</div></th>
+                  <th><div id="khum"></div></th>
                   <th><div id="kwea"></div></th>
-              </tr>
+                </tr>
               <tr>
                 <td>ロサンゼルス<br>(アメリカ)</td>
                 <td><div id="lmax"></div></td>
                 <td><div id="lmin"></div></td>
-                <th><div id="lhum">%</div></th>
+                <th><div id="lhum"></div></th>
                 <th><div id="lwea"></div></th>
-            </tr>
+              </tr>
               </tbody>
             </table>
     <h2 id="oceania">オセアニア</h2>
@@ -160,10 +160,10 @@
                   <thead>
                     <tr>
                       <th>都市名(国名)</th>
-                          <th>最高気温</th>
-                          <th>最低気温</th>
-                          <th>湿度</th>
-                          <th>天気</th>
+                          <th>最高気温(℃)</th>
+                          <th>最低気温(℃)</th>
+                          <th>湿度(%)</th>
+                          <th>風速(m/s)</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -171,7 +171,7 @@
                       <td>シドニー<br>(オーストラリア)</td>
                       <td><div id="gmax"></div></td>
                       <td><div id="gmin"></div></td>
-                      <th><div id="ghum">%</div></th>
+                      <th><div id="ghum"></div></th>
                       <th><div id="gwea"></div></th>
                   </tr>
                   </tbody>
