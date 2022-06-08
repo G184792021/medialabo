@@ -1,4 +1,4 @@
-let data = {
+/* let data = {
     "coord": {
       "lon": 116.3972,
       "lat": 39.9075
@@ -51,7 +51,7 @@ let data = {
   console.log("都市名"+data.name);
   console.log("最高気温"+data.main.temp_max);
   console.log("最低気温"+data.main.temp_min);
-
+ */
 //  let bmin = document.querySelector('div#bmin');
 //  bmin.textContent = data.main.temp_min;
 //  let bhum = document.querySelector('div#bhum');
@@ -99,7 +99,7 @@ function showResult(resp) {
   //   bmin.textContent = ara[i].main.temp_min;
   // }
 
-  console.log(data);
+  // console.log(data);
   document.querySelector('div#amax').textContent = ara[0].main.temp_max;
   document.querySelector('div#amin').textContent = ara[0].main.temp_min;
   document.querySelector('div#ahum').textContent = ara[0].main.humidity;
