@@ -90,15 +90,16 @@ function showResult(resp) {
   let data = resp.data;
   if (typeof data === 'string') {
     data = JSON.parse(data);
-}
-  ara[count] = data;
-  count = count +1;
+}   
+ara[count] = data;
+  
+count = count +1;
 
   // ara[i] = data;
   // for (let r=0;r<data.length;r++){
   //   let bmin = document.querySelector('div#bmin');
   //   bmin.textContent = ara[i].main.temp_min;
-  // }
+  // }.
   document.querySelector('div#amax').textContent = ara[0].main.temp_max;
   document.querySelector('div#amin').textContent = ara[0].main.temp_min;
   document.querySelector('div#ahum').textContent = ara[0].main.humidity;
