@@ -5,16 +5,16 @@
     <script src="project.js" defer></script>
     <link rel="stylesheet" href="project.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
-    <title>世界の風速m/s)</title>
+    <title>世界の天気</title>
   </head>
   <body>
     <header>
-     <h1><p>世界の風速m/s)</p></h1>
+     <h1><p>世界の天気</p></h1>
     </header>
-    <p>クリックで風速m/s)を取得</p>
+    <p>クリックでデータを取得</p>
     <button id="sendRequest">GET</button>
     <h2><p>世界の大州ごとにまとめました。<br>
-      風速m/s)、最低気温、最高気温(℃)、湿度が見れます。</p></h2>
+      最高気温、最低気温、湿度、風速が見れます。</p></h2>
   <div onclick="obj=document.getElementById('popo').style; obj.display=(obj.display=='none')?'block':'none';">
   <a style="cursor:pointer;"><div id="alal"><h3>▼ クリックして目次を表示</h3></div></a>
   </div>
@@ -25,7 +25,7 @@
     <li><h3><a href="#africa">アフリカ</a></h3></li>
     <li><h3><a href="#america">アメリカ</a></h3></li>
     <li><h3><a href="#oceania">オセアニア</a></h3></li>
-  </ul>>
+  </ul>
    
   </div>
     </form>
@@ -152,6 +152,13 @@
                 <td><div id="lmin"></div></td>
                 <th><div id="lhum"></div></th>
                 <th><div id="lwea"></div></th>
+              </tr>
+              <tr>
+                <td>リオデジャネイロ<br>(ブラジル)</td>
+                <td><div id="jmax"></div></td>
+                <td><div id="jmin"></div></td>
+                <th><div id="jhum"></div></th>
+                <th><div id="jwea"></div></th>
               </tr>
               </tbody>
             </table>
