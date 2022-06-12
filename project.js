@@ -41,14 +41,14 @@
     },
     "timezone": 28800,
     "id": 1816670,
-    "name": "北京市",
+    "wind.speed": "北京市",
     "cod": 200
   }
 
 
 
 
-  console.log("都市名"+data.name);
+  console.log("都市名"+data.wind.speed);
   console.log("最高気温"+data.main.temp_max);
   console.log("最低気温"+data.main.temp_min);
  */
@@ -101,62 +101,62 @@ function showResult(resp) {
   //   bmin.textContent = ara[i].main.temp_min;
   // }.
   for(let j=0;j<ara.length;j++){
-    if("カイロ"===ara[j].name){
+    if(0===ara[j].wind.speed){
     document.querySelector('div#amax').textContent = ara[j].main.temp_max;
     document.querySelector('div#amin').textContent = ara[j].main.temp_min;
     document.querySelector('div#ahum').textContent = ara[j].main.humidity;
     document.querySelector('div#awea').textContent = ara[j].wind.speed;
-    } else if("モスクワ"===ara[j].name){
+    } else if(2.7===ara[j].wind.speed){
     document.querySelector('div#bmax').textContent = ara[j].main.temp_max;
     document.querySelector('div#bmin').textContent = ara[j].main.temp_min;
     document.querySelector('div#bhum').textContent = ara[j].main.humidity;
     document.querySelector('div#bwea').textContent = ara[j].wind.speed;
-  } else if("ヨハネスブルク"===ara[j].name){
+  } else if(1.34===ara[j].wind.speed){
     document.querySelector('div#cmax').textContent = ara[j].main.temp_max;
     document.querySelector('div#cmin').textContent = ara[j].main.temp_min;
     document.querySelector('div#chum').textContent = ara[j].main.humidity;
     document.querySelector('div#cwea').textContent = ara[j].wind.speed;
-  } else if("北京"===ara[j].name){
+  } else if(2.65===ara[j].wind.speed){
     document.querySelector('div#dmax').textContent = ara[j].main.temp_max;
     document.querySelector('div#dmin').textContent = ara[j].main.temp_min;
     document.querySelector('div#dhum').textContent = ara[j].main.humidity;
     document.querySelector('div#dwea').textContent = ara[j].wind.speed;
-  } else if("東京"===ara[j].name){
+  } else if(6.17===ara[j].wind.speed){
     document.querySelector('div#emax').textContent = ara[j].main.temp_max;
     document.querySelector('div#emin').textContent = ara[j].main.temp_min;
     document.querySelector('div#ehum').textContent = ara[j].main.humidity;
     document.querySelector('div#ewea').textContent = ara[j].wind.speed;
-  } else if("シンガポール"===ara[j].name){
+  } else if(82===ara[j].main.humidity){
     document.querySelector('div#fmax').textContent = ara[j].main.temp_max;
     document.querySelector('div#fmin').textContent = ara[j].main.temp_min;
     document.querySelector('div#fhum').textContent = ara[j].main.humidity;
     document.querySelector('div#fwea').textContent = ara[j].wind.speed;
-  } else if("シドニー"===ara[j].name){
+  } else if(2.24===ara[j].wind.speed){
     document.querySelector('div#gmax').textContent = ara[j].main.temp_max;
     document.querySelector('div#gmin').textContent = ara[j].main.temp_min;
     document.querySelector('div#ghum').textContent = ara[j].main.humidity;
     document.querySelector('div#gwea').textContent = ara[j].wind.speed;
-  } else if("ロンドン"===ara[j].name){
+  } else if(3.6===ara[j].wind.speed){
     document.querySelector('div#hmax').textContent = ara[j].main.temp_max;
     document.querySelector('div#hmin').textContent = ara[j].main.temp_min;
     document.querySelector('div#hhum').textContent = ara[j].main.humidity;
     document.querySelector('div#hwea').textContent = ara[j].wind.speed;
-  } else if("パリ"===ara[j].name){
+  } else if(4.63===ara[j].wind.speed){
     document.querySelector('div#imax').textContent = ara[j].main.temp_max;
     document.querySelector('div#imin').textContent = ara[j].main.temp_min;
     document.querySelector('div#ihum').textContent = ara[j].main.humidity;
     document.querySelector('div#iwea').textContent = ara[j].wind.speed;
-  } else if("リオデジャネイロ"===ara[j].name){
+  } else if(1.21===ara[j].wind.speed){
     document.querySelector('div#jmax').textContent = ara[j].main.temp_max;
     document.querySelector('div#jmin').textContent = ara[j].main.temp_min;
     document.querySelector('div#jhum').textContent = ara[j].main.humidity;
     document.querySelector('div#jwea').textContent = ara[j].wind.speed;
-  } else if("ニューヨーク"===ara[j].name){
+  } else if(6.07===ara[j].main.temp){
     document.querySelector('div#kmax').textContent = ara[j].main.temp_max;
     document.querySelector('div#kmin').textContent = ara[j].main.temp_min;
     document.querySelector('div#khum').textContent = ara[j].main.humidity;
     document.querySelector('div#kwea').textContent = ara[j].wind.speed;
-  } else {
+  } else if(1.54===ara[j].wind.speed){
     document.querySelector('div#lmax').textContent = ara[j].main.temp_max;
     document.querySelector('div#lmin').textContent = ara[j].main.temp_min;
     document.querySelector('div#lhum').textContent = ara[j].main.humidity;
